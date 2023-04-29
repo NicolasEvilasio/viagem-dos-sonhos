@@ -7,136 +7,143 @@
     <title>Viagem dos Sonhos</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-mode">
     <header>
-        <nav>
-            <ul>
-                <li>Pacotes</li>
-                <li>Taxas</li>
-                <li>Contato</li>
-            </ul>
-        </nav>
-        <hr>
         <h1>Venha realizar a viagem dos seus sonhos!</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at lacus mauris.</p>
+            <!-- <button id="modoBotao">Dark/Light Mode</button> -->
+            <input type="checkbox" id="modoBotao">
+            <label for="modoBotao" id="modoLabel"></label>
+        <hr>
+        <nav>
+            <ul>
+                <li data-target="secPacotes">Pacotes</li>
+                <li data-target="secTaxas">Taxas</li>
+                <li data-target="secContato">Contato</li>
+            </ul>
+        </nav>  
         <hr>
     </header>
-    <section>
-        <h2>Conheça nossos pacotes</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at lacus mauris. Praesent ac ligula condimentum, vehicula massa a, mattis velit. Praesent lacinia dolor at egestas pulvinar. Cras ac interdum felis. Nullam ornare, mauris non egestas vestibulum, tortor dolor accumsan magna, in consectetur sapien nisi eget metus. Suspendisse laoreet arcu nibh. Suspendisse magna orci, vehicula in massa vel, semper porttitor diam. In felis erat, convallis at euismod ut, mollis a arcu. Nunc eleifend mauris sit amet lectus tristique condimentum. Quisque ultrices quam quis purus laoreet dictum. Sed scelerisque ornare purus nec eleifend. Nullam tincidunt nisi eget pulvinar malesuada. Mauris tincidunt urna non erat sagittis hendrerit eget vestibulum nulla. Curabitur consequat porttitor quam finibus egestas. In dictum eleifend nunc ut mattis.</p>
+    <main>
+        <section id="secPacotes">
+            <h2>Conheça nossos pacotes</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at lacus mauris. Praesent ac ligula condimentum, vehicula massa a, mattis velit. Praesent lacinia dolor at egestas pulvinar. Cras ac interdum felis. Nullam ornare, mauris non egestas vestibulum, tortor dolor accumsan magna, in consectetur sapien nisi eget metus. Suspendisse laoreet arcu nibh. Suspendisse magna orci, vehicula in massa vel, semper porttitor diam. In felis erat, convallis at euismod ut, mollis a arcu. Nunc eleifend mauris sit amet lectus tristique condimentum. Quisque ultrices quam quis purus laoreet dictum. Sed scelerisque ornare purus nec eleifend. Nullam tincidunt nisi eget pulvinar malesuada. Mauris tincidunt urna non erat sagittis hendrerit eget vestibulum nulla. Curabitur consequat porttitor quam finibus egestas. In dictum eleifend nunc ut mattis.</p>
+            <hr>
+            <figure>
+                <img src="img/Maceió.jpg" alt="Imagem de uma praia em Maceió, Alagoas">
+                <figcaption>Maceió-AL</figcaption> <!-- Legenda -->
+            </figure>
+            <figure>
+                <img src="img/Porto Seguro.jpg" alt="Imagem de uma praia em Porto Seguro, Bahia">
+                <figcaption>Porto Seguro-BA</figcaption> <!-- Legenda -->
+            </figure>
+            <figure>
+                <img src="img/Gramado.jpg" alt="Imagem da cidade Gramado, Rio Grande do Sul">
+                <figcaption>Gramado-RS</figcaption> <!-- Legenda -->
+            </figure>
+        </section>
+            <video controls>
+                <source src="./video/video viagem.mp4" type="video/mp4"> <!-- o Source faz com o navegador tente executar esse formato, caso não exiba, passa para a próxima linha-->
+                <!-- O texto só será exibido em navegadores que não suportam o elemento <video> -->
+                <p>Seu navegador não suporta o vídeo. Aqui está um <a href="https://www.youtube.com/shorts/zXsDdyO6E6k">link</a> para visualizar o vídeo</p>
+            </video>
+            <hr>
+            <br><br> <!--apagar depois-->
+        <section id="secTaxas">
+            <h2>Taxas e serviços</h2>
+            <p>Veja nossas taxas para serviços</p>
+            <table border>
+                <caption>Descrição dos serviços e respectivos valores</caption>
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Reserva de hotel</td>
+                        <td>R$ 150,00</td>
+                    </tr>
+                    <tr>
+                        <td>Compra de passagens</td>
+                        <td>R$ 100,00</td>
+                    </tr>
+                    <tr>
+                        <td>Aluguel de carros</td>
+                        <td>R$ 50,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
         <hr>
-        <figure>
-            <img src="img/Maceió.jpg" alt="Imagem de uma praia em Maceió, Alagoas">
-            <figcaption>Maceió-AL</figcaption> <!-- Legenda -->
-        </figure>
-        <figure>
-            <img src="img/Porto Seguro.jpg" alt="Imagem de uma praia em Porto Seguro, Bahia">
-            <figcaption>Porto Seguro-BA</figcaption> <!-- Legenda -->
-        </figure>
-        <figure>
-            <img src="img/Gramado.jpg" alt="Imagem da cidade Gramado, Rio Grande do Sul">
-            <figcaption>Gramado-RS</figcaption> <!-- Legenda -->
-        </figure>
-    </section>
-        <video controls>
-            <source src="./video/video viagem.mp4" type="video/mp4"> <!-- o Source faz com o navegador tente executar esse formato, caso não exiba, passa para a próxima linha-->
-            <!-- O texto só será exibido em navegadores que não suportam o elemento <video> -->
-            <p>Seu navegador não suporta o vídeo. Aqui está um <a href="https://www.youtube.com/shorts/zXsDdyO6E6k">link</a> para visualizar o vídeo</p>
-        </video>
-        <hr>
-        <br><br> <!--apagar depois-->
-    <section>
-        <h2>Taxas e serviços</h2>
-        <p>Veja nossas taxas para serviços</p>
-        <table border>
-            <caption>Descrição dos serviços e respectivos valores</caption>
-            <thead>
-                <tr>
-                    <th>Serviço</th>
-                    <th>Valor</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Reserva de hotel</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr>
-                    <td>Compra de passagens</td>
-                    <td>R$ 100,00</td>
-                </tr>
-                <tr>
-                    <td>Aluguel de carros</td>
-                    <td>R$ 50,00</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <hr>
-    <section>
-        <h2>Orçamento</h2>
-        <form action="#" method="get">
+        <section id="secContato">
+            <h2>Orçamento</h2>
+            <form action="#" method="get">
 
-            <fieldset>
-                <legend>Dados da viagem</legend>
-                <label>Nome</label><br>
-                <input type="text" name="nome" placeholder="Seu nome">
+                <fieldset>
+                    <legend>Dados da viagem</legend>
+                    <label>Nome</label><br>
+                    <input type="text" name="nome" placeholder="Seu nome">
+                    <br><br>
+
+                    <label>Email</label><br>
+                    <input type="email" required name="email" placeholder="email@email.com"> <!-- required torna o campo obrigatório -->
+                    <br><br>
+
+                    <label>Data de ida</label><br>
+                    <input type="date" name="dataIda">
+                    <br><br>
+
+                    <label>Data de volta</label><br>
+                    <input type="date" name="dataVolta">
+                    <br><br>
+
+                    <label>Quantidade de pessoas</label><br>
+                    <input type="number" name="qtdPessoas">
+                    <br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Quais serviços deseja contratar?</legend>
+                    <label><input type="checkbox" name="passagens" value="Passagens" checked>Compra de passagens</label>
+                    <label><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem</label>
+                    <label><input type="checkbox" name="veiculos" value="Veículo">Reserva de veículos</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Escolha a forma de pagamento</legend>
+                    <label><br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito</label>
+                    <label><br><input type="radio" name="formaPagamento" value="Boleto">Boleto</label>
+                    <label><br><input type="radio" name="formaPagamento" value="Pix" checked>Pix</label> <!--checked faz com que essa opção já esteja selecionada ao carregar o formulário-->
+                </fieldset>
+
+                <fieldset>
+                    <legend>Escolha o prazo para pagamento</legend>
+                    <label><br>
+                        <select name="prazoPagamento">
+                            <option value="aVista" selected>À vista</option> <!-- selected faz com que essa opção já esteja selecionada ao carregar o elemento-->
+                            <option value="5x">5x sem juros</option>
+                            <option value="10x">10x com juros</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <br>
+                <label>Comentário</label><br>
+                <textarea rows="5" name="comentario" placeholder="Faltou algum detalhe no formulário? Descreva quais serviços você deseja e te retornaremos com o orçamento personalizado o mais rápido possível..."></textarea>
                 <br><br>
 
-                <label>Email</label><br>
-                <input type="email" required name="email" placeholder="email@email.com"> <!-- required torna o campo obrigatório -->
-                <br><br>
-
-                <label>Data de ida</label><br>
-                <input type="date" name="dataIda">
-                <br><br>
-
-                <label>Data de volta</label><br>
-                <input type="date" name="dataVolta">
-                <br><br>
-
-                <label>Quantidade de pessoas</label><br>
-                <input type="number" name="qtdPessoas">
-                <br><br>
-            </fieldset>
-
-            <fieldset>
-                <legend>Quais serviços deseja contratar?</legend>
-                <label><input type="checkbox" name="passagens" value="Passagens" checked>Compra de passagens</label>
-                <label><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem</label>
-                <label><input type="checkbox" name="veiculos" value="Veículo">Reserva de veículos</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Escolha a forma de pagamento</legend>
-                <label><br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito</label>
-                <label><br><input type="radio" name="formaPagamento" value="Boleto">Boleto</label>
-                <label><br><input type="radio" name="formaPagamento" value="Pix" checked>Pix</label> <!--checked faz com que essa opção já esteja selecionada ao carregar o formulário-->
-            </fieldset>
-
-            <fieldset>
-                <legend>Escolha o prazo para pagamento</legend>
-                <label><br>
-                    <select name="prazoPagamento">
-                        <option value="aVista" selected>À vista</option> <!-- selected faz com que essa opção já esteja selecionada ao carregar o elemento-->
-                        <option value="5x">5x sem juros</option>
-                        <option value="10x">10x com juros</option>
-                    </select>
-                </label>
-            </fieldset>
-
-            <br>
-            <label>Comentário</label><br>
-            <textarea rows="5" name="comentario" placeholder="Faltou algum detalhe no formulário? Descreva quais serviços você deseja e te retornaremos com o orçamento personalizado o mais rápido possível..."></textarea>
-            <br><br>
-
-            <button type="submit">Salvar</button>
-        </form>
-    </section>
+                <button type="submit">Salvar</button>
+            </form>
+        </section>
+    </main>
     <footer>
         <hr>
-        <p>Desenvolvido por Nicolas Evilasio</p>
+        <p>Desenvolvido por Nicolas Evilasio - CESMAC 2023</p>
+        <p>Horas trabalhadas (pesquisa e coding): 06:00:00</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
