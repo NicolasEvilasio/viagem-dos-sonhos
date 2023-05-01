@@ -19,7 +19,7 @@ function alternarModo() {
       links[i].addEventListener('click', function() {
         var target = document.getElementById(this.getAttribute('data-target'));
         var targetTop = target.getBoundingClientRect().top;
-        var headerHeight = 200;
+        var headerHeight = 110;
         var scrollTo = targetTop - headerHeight;
   
         window.scrollTo({

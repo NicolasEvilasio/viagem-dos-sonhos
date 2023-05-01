@@ -10,10 +10,16 @@
 <body class="light-mode">
     <header>
         <h1>Venha realizar a viagem dos seus sonhos!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at lacus mauris.</p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at lacus mauris.</p> -->
             <!-- <button id="modoBotao">Dark/Light Mode</button> -->
-            <input type="checkbox" id="modoBotao">
-            <label for="modoBotao" id="modoLabel"></label>
+            <div id="divModoBotao">
+                <input type="checkbox" class="checkbox" id="modoBotao">
+                <label class="label" for="modoBotao" id="modoLabel">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>                 
+                    <div class="ball"></div>
+                </label>
+            </div>
         <hr>
         <nav>
             <ul>
@@ -48,11 +54,10 @@
                 <p>Seu navegador não suporta o vídeo. Aqui está um <a href="https://www.youtube.com/shorts/zXsDdyO6E6k">link</a> para visualizar o vídeo</p>
             </video>
             <hr>
-            <br><br> <!--apagar depois-->
         <section id="secTaxas">
             <h2>Taxas e serviços</h2>
             <p>Veja nossas taxas para serviços</p>
-            <table border>
+            <table>
                 <caption>Descrição dos serviços e respectivos valores</caption>
                 <thead>
                     <tr>
@@ -103,21 +108,21 @@
                     <input type="number" name="qtdPessoas">
                     <br><br>
                 </fieldset>
-
+                <br> <!--Apagar depois-->
                 <fieldset>
                     <legend>Quais serviços deseja contratar?</legend>
                     <label><input type="checkbox" name="passagens" value="Passagens" checked>Compra de passagens</label>
                     <label><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem</label>
                     <label><input type="checkbox" name="veiculos" value="Veículo">Reserva de veículos</label>
                 </fieldset>
-
+                <br> <!--Apagar depois-->
                 <fieldset>
                     <legend>Escolha a forma de pagamento</legend>
                     <label><br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito</label>
                     <label><br><input type="radio" name="formaPagamento" value="Boleto">Boleto</label>
                     <label><br><input type="radio" name="formaPagamento" value="Pix" checked>Pix</label> <!--checked faz com que essa opção já esteja selecionada ao carregar o formulário-->
                 </fieldset>
-
+                <br> <!--Apagar depois-->
                 <fieldset>
                     <legend>Escolha o prazo para pagamento</legend>
                     <label><br>
@@ -128,8 +133,7 @@
                         </select>
                     </label>
                 </fieldset>
-
-                <br>
+                <br><!--Apagar depois-->
                 <label>Comentário</label><br>
                 <textarea rows="5" name="comentario" placeholder="Faltou algum detalhe no formulário? Descreva quais serviços você deseja e te retornaremos com o orçamento personalizado o mais rápido possível..."></textarea>
                 <br><br>
@@ -140,8 +144,8 @@
     </main>
     <footer>
         <hr>
-        <p>Desenvolvido por Nicolas Evilasio - CESMAC 2023</p>
-        <p>Horas trabalhadas (pesquisa e coding): 06:00:00</p>
+        <p><b>Desenvolvido por Nicolas Evilasio - CESMAC 2023</b></p>
+        <p>Horas trabalhadas (pesquisa e coding): 16:00:00</p>
     </footer>
     <script src="script.js"></script>
 </body>
