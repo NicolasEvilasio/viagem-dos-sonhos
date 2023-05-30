@@ -9,17 +9,6 @@
     transition: 0.2s linear;
 }
 
-
-.row img {
-    width: 300px;
-    height: 180px;
-}
-
-#videoShort {
-    width: 180px;
-    height: 300px;
-}
-
 header h1 {
     font-size: 20px;
     font-weight: bold;

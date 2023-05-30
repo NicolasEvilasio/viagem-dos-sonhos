@@ -97,37 +97,78 @@
 
     <main>
         <h2>Conheça nossos pacotes</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at lacus mauris. Praesent ac ligula
-            condimentum, vehicula massa a, mattis velit. Praesent lacinia dolor at egestas pulvinar. Cras ac
-            interdum felis. Nullam ornare, mauris non egestas vestibulum, tortor dolor accumsan magna, in
-            consectetur sapien nisi eget metus. Suspendisse laoreet arcu nibh. Suspendisse magna orci, vehicula in
-            massa vel, semper porttitor diam. In felis erat, convallis at euismod ut, mollis a arcu. Nunc eleifend
-            mauris sit amet lectus tristique condimentum. Quisque ultrices quam quis purus laoreet dictum. Sed
-            scelerisque ornare purus nec eleifend. Nullam tincidunt nisi eget pulvinar malesuada. Mauris tincidunt
-            urna non erat sagittis hendrerit eget vestibulum nulla. Curabitur consequat porttitor quam finibus
-            egestas. In dictum eleifend nunc ut mattis.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
         <hr>
-        <div class="row">
-            <figure class="col text-center">
-                <img src="img/Maceió.jpg" alt="Imagem de uma praia em Maceió, Alagoas">
-                <figcaption>Maceió-AL</figcaption> <!-- Legenda -->
-            </figure>
-            <figure class="col text-center">
-                <img src="img/Porto Seguro.jpg" alt="Imagem de uma praia em Porto Seguro, Bahia">
-                <figcaption>Porto Seguro-BA</figcaption> <!-- Legenda -->
-            </figure>
-            <figure class="col text-center">
-                <img src="img/Gramado.jpg" alt="Imagem da cidade Gramado, Rio Grande do Sul">
-                <figcaption>Gramado-RS</figcaption> <!-- Legenda -->
-            </figure>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Suas compras</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Produto adicionado ao carrinho!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continuar comprando</button>
+                        <button type="button" class="btn btn-success">Finalizar compra</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <video controls id="videoShort">
-            <source src="./video/video viagem.mp4" type="video/mp4">
-            <!-- o Source faz com o navegador tente executar esse formato, caso não exiba, passa para a próxima linha-->
-            <!-- O texto só será exibido em navegadores que não suportam o elemento <video> -->
-            <p>Seu navegador não suporta o vídeo. Aqui está um <a
-                    href="https://www.youtube.com/shorts/zXsDdyO6E6k">link</a> para visualizar o vídeo</p>
-        </video>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/Maceió.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-warning">
+                        <h5 class="card-title">Maceió</h5>
+                        <h1 class="card-subtitle text-muted">R$4.500,00</h1>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Reservar</button>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Em até 12x sem juros</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/Gramado.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-warning">
+                        <h5 class="card-title">Gramado</h5>
+                        <h1 class="card-subtitle text-muted">R$5.000,00</h1>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Reservar</button>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Em até 18x sem juros</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/Porto Seguro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-warning">
+                        <h5 class="card-title">Porto Seguro</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer..</p>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Reservar</button>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Em até 12x em juros</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <hr>
 
         <section class="container-fluid bg-warning text-center p-2">
